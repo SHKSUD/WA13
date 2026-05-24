@@ -99,6 +99,15 @@
     color:rgba(245,230,192,0.22);
     animation: blink 2.2s ease-in-out infinite;
   }
+  #overlay .o-click {
+    font-family:'Cormorant Garamond',serif;
+    font-size:clamp(0.85rem,2vw,1.05rem);
+    font-style:italic;
+    letter-spacing:6px;
+    color:rgba(245,230,192,0.45);
+    margin-top:1.8rem;
+    animation: blink 2.2s ease-in-out infinite 0.4s;
+  }
   @keyframes blink { 0%,100%{opacity:0.22;} 50%{opacity:0.65;} }
 
   /* CONFETTI canvas */
@@ -338,8 +347,9 @@
 
 <!-- OVERLAY -->
 <div id="overlay" onclick="beginExperience()">
-  <div class="o-num">13</div>
+  <div class="o-num">13<span style="font-size:0.32em; letter-spacing:2px; vertical-align:super; color:rgba(212,168,67,0.75); font-family:'DM Sans',sans-serif; font-weight:300;">th</span></div>
   <div class="o-label">Years Together</div>
+  <div class="o-click">Click</div>
   <div class="o-hint">Tap anywhere to begin</div>
 </div>
 
